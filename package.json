@@ -31,6 +31,7 @@
     "base-app": "^0.2.6",
     "expand-target": "^0.6.4",
     "fs-exists-sync": "^0.1.0",
+    "gulp-format-md": "^0.1.9",
     "mocha": "^2.5.3",
     "rimraf": "^2.5.3",
     "through2": "^2.0.1"
@@ -44,6 +45,17 @@
       "generate-dest",
       "generate-install",
       "gulp"
-    ]
+    ],
+    "toc": false,
+    "layout": "generator",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    }
   }
 }
