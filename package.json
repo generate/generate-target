@@ -1,7 +1,7 @@
 {
   "name": "generate-target",
   "description": "Plugin for automatically creating tasks from declarative `target` configurations. Works with generate, assemble, verb, or any other base application with plugin support.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/generate/generate-target",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "generate/generate-target",
