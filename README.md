@@ -1,16 +1,6 @@
-# generate-target [![NPM version](https://img.shields.io/npm/v/generate-target.svg?style=flat)](https://www.npmjs.com/package/generate-target) [![NPM downloads](https://img.shields.io/npm/dm/generate-target.svg?style=flat)](https://npmjs.org/package/generate-target) [![Build Status](https://img.shields.io/travis/jonschlinkert/generate-target.svg?style=flat)](https://travis-ci.org/jonschlinkert/generate-target)
+# generate-target [![NPM version](https://img.shields.io/npm/v/generate-target.svg?style=flat)](https://www.npmjs.com/package/generate-target) [![NPM downloads](https://img.shields.io/npm/dm/generate-target.svg?style=flat)](https://npmjs.org/package/generate-target) [![Build Status](https://img.shields.io/travis/generate/generate-target.svg?style=flat)](https://travis-ci.org/generate/generate-target)
 
 Plugin for automatically creating tasks from declarative `target` configurations. Works with generate, assemble, verb, or any other base application with plugin support.
-
-## What is generate?
-
-Generate is a command line tool and developer framework for scaffolding out new GitHub projects using [generators](https://github.com/generate/generate/blob/master/docs/generators.md) and [tasks](https://github.com/generate/generate/blob/master/docs/tasks.md). Answers to prompts and the user's environment can be used to determine the templates, directories, files and contents to build. Support for [gulp](http://gulpjs.com), [base](https://github.com/node-base/base) and [assemble](https://github.com/assemble/assemble) plugins, and much more.
-
-For more information about Generate:
-
-* Visit the [generate project](https://github.com/generate/generate)
-* Visit the [generate documentation](https://github.com/generate/generate/blob/master/docs/)
-* Find [generators on npm](https://www.npmjs.com/browse/keyword/generate-generator) (help us [author generators](https://github.com/generate/generate/blob/master/docs/micro-generators.md))
 
 ## Usage
 
@@ -122,71 +112,6 @@ Pass options to the plugin to disable this feature.
 app.use(targets({tasks: false}));
 ```
 
-## CLI
-
-**Help**
-
-Get general help and a menu of available commands:
-
-```sh
-$ gen help
-```
-
-**Running the `target` generator**
-
-Once both [generate](https://github.com/generate/generate) and `generate-target` are installed globally, you can run the generator with the following command:
-
-```sh
-$ gen target
-```
-
-If completed successfully, you should see both `starting` and `finished` events in the terminal, like the following:
-
-```sh
-[00:44:21] starting ...
-...
-[00:44:22] finished ✔
-```
-
-If you do not see one or both of those events, please [let us know about it](../../issues).
-
-## API
-
-### Install locally
-
-If you want to use `generate-target` as a plugin or sub-generator to extend the features and settings in your own generator, you must first install it locally:
-
-Install with [npm](https://www.npmjs.com/):
-
-```sh
-$ npm install --save generate-target
-```
-
-### Use as a plugin
-
-Use as a [plugin](https://github.com/generate/generate/blob/master/docs/plugins.md) if you want to extend your own generator with the features, settings and tasks of `generate-target`, as if they were created on your generator:
-
-```js
-module.exports = function(app) {
-  app.use(require('generate-target'));
-};
-```
-
-Visit Generate's [plugin docs](https://github.com/generate/generate/blob/master/docs/plugins.md) to learn more about plugins.
-
-### Use as a sub-generator
-
-Use as a [sub-generator](https://github.com/generate/generate/blob/master/docs/generators.md) if you want to add `generate-target` to a  _namespace_ in your generator:
-
-```js
-module.exports = function(app) {
-  // register the generate-target with whatever name you want
-  app.register('foo', require('generate-target'));
-};
-```
-
-Visit Generate's [sub-generator docs](https://github.com/generate/generate/blob/master/docs/sub-generators.md) to learn more about sub-generators.
-
 ## About
 
 ### Contributing
@@ -211,7 +136,7 @@ $ npm install -d && npm test
 ### License
 
 Copyright © 2016, [Jon Schlinkert](https://github.com/jonschlinkert).
-Released under the [MIT license](https://github.com/jonschlinkert/generate-target/blob/master/LICENSE).
+Released under the [MIT license](https://github.com/generate/generate-target/blob/master/LICENSE).
 
 ***
 

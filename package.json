@@ -2,23 +2,26 @@
   "name": "generate-target",
   "description": "Plugin for automatically creating tasks from declarative `target` configurations. Works with generate, assemble, verb, or any other base application with plugin support.",
   "version": "0.1.0",
-  "homepage": "https://github.com/jonschlinkert/generate-target",
+  "homepage": "https://github.com/generate/generate-target",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
-  "repository": "jonschlinkert/generate-target",
+  "repository": "generate/generate-target",
   "bugs": {
-    "url": "https://github.com/jonschlinkert/generate-target/issues"
+    "url": "https://github.com/generate/generate-target/issues"
   },
   "license": "MIT",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md",
+    "templates"
+  ],
+  "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
     "test": "mocha"
   },
-  "keywords": [
-    "generate",
-    "target"
-  ],
   "dependencies": {
     "base-files-each": "^0.1.5",
     "base-target": "^0.1.0",
@@ -36,6 +39,40 @@
     "rimraf": "^2.5.3",
     "through2": "^2.0.1"
   },
+  "keywords": [
+    "boilerplate",
+    "build",
+    "cli",
+    "cli-app",
+    "command-line",
+    "create",
+    "dev",
+    "development",
+    "framework",
+    "front",
+    "frontend",
+    "generate",
+    "generate-generator",
+    "generate-plugin",
+    "generategenerator",
+    "generateplugin",
+    "generator",
+    "init",
+    "initialize",
+    "new",
+    "plugin",
+    "project",
+    "projects",
+    "scaffold",
+    "scaffolder",
+    "scaffolding",
+    "target",
+    "template",
+    "templates",
+    "webapp",
+    "yeoman",
+    "yo"
+  ],
   "verb": {
     "reflinks": [
       "assemble",
@@ -47,7 +84,7 @@
       "gulp"
     ],
     "toc": false,
-    "layout": "generator",
+    "layout": "common-minimal",
     "tasks": [
       "readme"
     ],
