@@ -114,6 +114,12 @@ app.use(targets({tasks: false}));
 
 ## About
 
+### Related projects
+
+* [base-scaffold](https://www.npmjs.com/package/base-scaffold): Base plugin that adds support for generating files from a declarative scaffold configuration. | [homepage](https://github.com/node-base/base-scaffold "Base plugin that adds support for generating files from a declarative scaffold configuration.")
+* [base-target](https://www.npmjs.com/package/base-target): Plugin that adds support for defining declarative `target` configurations that directly map to functional tasks. | [homepage](https://github.com/node-base/base-target "Plugin that adds support for defining declarative `target` configurations that directly map to functional tasks.")
+* [generate-scaffold](https://www.npmjs.com/package/generate-scaffold): Generate a scaffold from a declarative configuration. | [homepage](https://github.com/generate/generate-scaffold "Generate a scaffold from a declarative configuration.")
+
 ### Contributing
 
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](../../issues/new).

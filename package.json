@@ -74,6 +74,21 @@
     "yo"
   ],
   "verb": {
+    "toc": false,
+    "layout": "common-minimal",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": [
+        "base-target",
+        "base-scaffold",
+        "generate-scaffold"
+      ]
+    },
     "reflinks": [
       "assemble",
       "base",
@@ -82,14 +97,6 @@
       "generate-dest",
       "generate-install",
       "gulp"
-    ],
-    "toc": false,
-    "layout": "common-minimal",
-    "tasks": [
-      "readme"
-    ],
-    "plugins": [
-      "gulp-format-md"
     ],
     "lint": {
       "reflinks": true
